@@ -51,7 +51,7 @@ void whiteBox(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
     }
 }  
 
-/*void whiteBorder(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
+void whiteBorder(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
   
   //top quarter of picture
    for(int row = 0; row < h/4; row++) {
@@ -76,7 +76,7 @@ void whiteBox(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
 	imgOut[row][col] = imgIn[row][col];
     }
     }
-    /* //side borders
+    //side borders
     for(int row = h/4 + 1; row < 3 * h / 4 - 1; row++){
       for(int col = 0; col < w/4 ; col++){
 	imgOut[row][col] = imgIn[row][col];
@@ -95,7 +95,7 @@ void whiteBox(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
       }
     }
     //bottom border
-    for(int row = 3*w/4-1; row < 3*w/4; row++){
+    for(int row = 3 * h / 4 - 1; row < 3 * h / 4; row++){
       for(int col = 0; col < w/4; col++){
 	imgOut[row][col] = imgIn[row][col];
       }
@@ -114,7 +114,7 @@ void whiteBox(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
     }
     
 }  
-*/
+
 
 void border(int imgOut[MAX_H][MAX_W], int imgIn[MAX_H][MAX_W], int h, int w){
   for(int row = 0; row < h; row++) {

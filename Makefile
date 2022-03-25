@@ -1,10 +1,15 @@
 main: main.o imageio.o funcs.o
 	g++ -o main main.o imageio.o funcs.o
 
+secondMain: secondMain.o imageio.o funcs.o
+	g++ -o secondMain secondMain.o imageio.o funcs.o
+
 sample: sample.o imageio.o
 	g++ -o sample sample.o imageio.o
 
 main.o: main.cpp imageio.h funcs.h
+
+secondMain.o: secondMain.cpp imageio.h funcs.h
 
 funcs.o: funcs.cpp funcs.h imageio.h
 
@@ -13,4 +18,4 @@ sample.o: sample.cpp imageio.h
 imageio.o: imageio.cpp imageio.h
 
 clean:
-	rm -f sample.o imageio.o funcs.o main.o TaskA.pgm TaskB.pgm TaskC.pgm TaskD.pgm main
+	rm -f sample.o imageio.o funcs.o main.o secondMain.o TaskA.pgm TaskB.pgm TaskC.pgm TaskD.pgm main secondMain

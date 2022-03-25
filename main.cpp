@@ -31,13 +31,5 @@ int main(){
   whiteBox(imgOutC, imgInC, h, w);
   writeImage("TaskC.pgm", imgOutC, h, w);
 
-  //Task D
-  int imgInD[MAX_H][MAX_W],imgOutD[MAX_H][MAX_W];
-
-  readImage(filename, imgInD, h, w);
-  
-  border(imgOutD, imgInD, h, w);
-  writeImage("TaskD.pgm", imgOutD, h, w);
-
   return 0;
 }
