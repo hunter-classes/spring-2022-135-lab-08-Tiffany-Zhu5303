@@ -3,9 +3,7 @@
 * Last name:Zhu
 * First name:Tiffany
 * GitHub username:Tiffany-Zhu5303
-* Notes:
-
-
+* Notes:Having some kind of issue with part D. Continuous error "segmentation dump". Will finish lab D and onwards late if permitted.
   
 * General instructions:
 - Fill in your name and GitHub username on top.
