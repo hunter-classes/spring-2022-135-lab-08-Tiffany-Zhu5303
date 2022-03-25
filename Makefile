@@ -13,4 +13,4 @@ sample.o: sample.cpp imageio.h
 imageio.o: imageio.cpp imageio.h
 
 clean:
-	rm -f sample.o imageio.o funcs.o main.o TaskA.pgm main
+	rm -f sample.o imageio.o funcs.o main.o TaskA.pgm TaskB.pgm main
